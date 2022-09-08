@@ -1227,3 +1227,34 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+
+/*--------------------------------------------------------------
+# Tooltip
+--------------------------------------------------------------*/
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tool-tip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tool-tip:hover .tooltiptext {
+  visibility: visible;
+}
